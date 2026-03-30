@@ -1,0 +1,32 @@
+Sudoku Skill (Dynamic)
+
+TRIGGER / ROUTING
+- Use this skill when the user requests work related to a Sudoku application, including:
+  - Generating valid Sudoku puzzles (various difficulties)
+  - Implementing Sudoku gameplay UX (grid input, keypad, keyboard navigation)
+  - Validation/conflict highlighting, candidate notes (pencil marks)
+  - Hints, undo/redo, timer, pause/resume
+  - Completion screen, statistics (best times, streaks)
+  - Responsive layout, accessibility improvements, theming (light/dark), retro/modern styling
+- Do NOT use this skill when the request is unrelated to Sudoku or is solely about unrelated infrastructure, billing, or non-Sudoku features.
+
+HARD OUTPUT CONTRACT
+- Filesystem boundaries:
+  - Only create/modify files inside the current repository/workspace.
+  - Prefer editing existing files rather than adding new ones unless required by the request.
+  - If you create new files, place them in the project’s existing conventional folders (e.g., React source in `src/`).
+- Formatting and quality constraints:
+  - Follow the project’s established style and conventions.
+  - Add clear comments where logic is non-trivial.
+  - Ensure public interfaces are documented as required by the project’s rules (e.g., PUBLIC_INTERFACE markers where applicable).
+  - Avoid hardcoding configuration; use environment variables when needed.
+  - For React:
+    - Keep components accessible (ARIA labels where needed, keyboard support).
+    - Keep UI responsive; avoid fixed pixel layouts that break on mobile.
+    - Prefer small, composable components.
+
+HOW TO INVOKE
+- Selection key: Sudoku
+- Example user phrasing:
+  - "Add notes (pencil marks) and conflict highlighting to my Sudoku grid."
+  - "Implement Sudoku puzzle generation with easy/medium/hard difficulties and a timer."

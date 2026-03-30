@@ -1,0 +1,3 @@
+name: Sudoku
+description: Use this skill when building, updating, or refactoring a Sudoku web app, focusing on puzzle generation, interactive grid UX, validation/conflict highlighting, notes, hints, undo/redo, timer, accessibility, and responsive layout.
+file: sudoku.txt
